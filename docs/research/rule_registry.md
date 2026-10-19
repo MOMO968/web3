@@ -283,3 +283,21 @@
 | ML-T032 | 2025年4月极端下跌后的一笔 TQQQ 反转，是观察连续大幅跳空及价格极度低于小时EMA，在分钟级反转/盘中突破时入场，迅速在强势中全部获利退出 | `20% below the 1 hour EMA`、`sell all into the strength` | 极端事件案例，不得泛化成一般 Pullback 规则；交易日期与具体价需图表核对 |
 
 注意：ML-T025–032 为第三方转录中确实出现的 Martin 口述摘要，但可能存在ASR错词和语境断裂；本轮未能检索到用户新增两段第三方视频可靠正文，故没有从其中提炼任何规则。
+
+
+## 第四批工作转录：扫描、主题识别及市场环境（2026-10-19）
+
+取证：[TraderLion 完整访谈连续转录](https://youtubetotranscript.com/transcript?current_language_code=en&v=VKNEJA5r8zw)，[Snipd 章节索引](https://share.snipd.com/episode/2ecc451e-3f05-4f2b-8ccd-83d2d741e3ad)。重点对应约 02:49 主题扫描、03:15 相对强度、03:46 市场判断和03:52盘前流程。时间为章节起点，不等同逐句原话时间；所有条目证据状态 `TRANSCRIPT_REVIEW`，待音频/交易图表核对。
+
+| ID | Martin 的本人陈述（中文概述） | 文本定位锚词 | 尚未确定的执行要素 |
+| --- | --- | --- | --- |
+| ML-T033 | 维护多个股票观察名单，逐只查看并调整领先/落后分类，同时通过盘前跳空扫描和前一日强势股扫描发现标的 | `several watch list`、`pre-market scans for the gap ups` | 完整扫描器条件、名单刷新频率及具体字段 |
+| ML-T034 | 若同一行业多只股票集中出现在扫描结果中，或多个标的从普通观察名单升级至领先名单，将该行业视为值得追踪的潜在主题 | `within the same industry`、`leading watch list` | 行业归类源、触发数量及升级标准 |
+| ML-T035 | 同题材选股时，首先比较日线/周线相对强度，亦关注突破前1–3天的相对表现及近期K线是否收紧 | `relative strength among all`、`one to three days` | 计算参照基准、RS窗口/公式以及tight阈值 |
+| ML-T036 | 当同组存在多个机会时，偏好 Dollar Volume 更高、流动性更好的股票，以期降低滑点 | `highest dollar volume` | 使用的平均窗口、门槛与权重 |
+| ML-T037 | 判断市场态势时将自身新开仓是否有效列为最重要反馈，同时观察 QQQ/IWM 等指数和领先/落后股名单变化 | `your own trade feedback is the most important one` | 反馈取样周期、指数条件、仓位映射阈值 |
+| ML-T038 | 指数连续大涨并显著延伸时不一定适合激进开新仓；相比之下，指数回踩上行9/21EMA并获得支撑时可能更适合进攻 | `pullback to the 9`、`21 EMA` | extended、support、aggressive的量化边界 |
+| ML-T039 | 市场出现多只弱股、反转失败、均线破位且长短两边都不顺时，倾向降低交易频率，而不是持续强行换边 | `trade less in those condition` | 市场宽度、交易反馈判定与风险降档大小 |
+| ML-T040 | 美股开盘前约45–60分钟开始准备，扫描盘前异动、观察名单、已有仓位和潜在入场 | `45 minutes to one hour` | 精确盘前处理和交易日/时区约定 |
+
+**重要一手来源追踪线索：** Martin 在此次访谈中说，具体 scanner 设置曾在与同一主持人上一年的访谈中展示；找到该先前访谈及扫描设置是下一轮优先任务。在看到实际筛选条件前，不得自行设定ADR、价格、涨跌幅或成交额的阈值。
