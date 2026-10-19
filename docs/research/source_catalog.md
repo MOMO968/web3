@@ -137,3 +137,10 @@ A04–A07 只是检索入口，不能登记为已取得的原始发言。未找�
 | AUX-008 | https://www.youtube.com/watch?v=Y7Xb8LjXacI | 第三方解读 | UNVERIFIED | 同上；尤其注意区分博主的推测、量化改写与 Martin 的原话 |
 
 处理规则：先提取博主观点及其引用来源，再返回一手访谈/本人发言交叉核对。得到本人证据前不升级为 VERIFIED，也不得作为复刻系统的硬编码依据。若部分第三方解读具有实现价值但不是本人公开规则，应归档为“研究假说”，不混入高保真V1原始规则。
+
+
+## 第五轮：用户补充的两段第三方视频取证复核（2026-10-19）
+
+尝试直接访问 `https://www.youtube.com/watch?v=lqLm-SBflTI` 与 `https://www.youtube.com/watch?v=Y7Xb8LjXacI`，网页工具返回 cache miss；按视频 ID 访问 youtubetotranscript 对应入口也未获得正文。关键词搜索视频 ID 未获取可靠的标题/创作者或全文转录。
+
+因此 AUX-007 和 AUX-008 仍是 `SECONDARY / UNVERIFIED`；本轮没有把任何第三方解释写入 Martin 本人规则。后续如用户提供字幕，可逐条对照原访谈。
