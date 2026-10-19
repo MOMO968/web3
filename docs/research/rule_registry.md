@@ -301,3 +301,26 @@
 | ML-T040 | 美股开盘前约45–60分钟开始准备，扫描盘前异动、观察名单、已有仓位和潜在入场 | `45 minutes to one hour` | 精确盘前处理和交易日/时区约定 |
 
 **重要一手来源追踪线索：** Martin 在此次访谈中说，具体 scanner 设置曾在与同一主持人上一年的访谈中展示；找到该先前访谈及扫描设置是下一轮优先任务。在看到实际筛选条件前，不得自行设定ADR、价格、涨跌幅或成交额的阈值。
+
+
+## Martin 本人文章中已确认的规则（独立于第三方访谈工作转录）
+
+> 状态：`VERIFIED_PUBLIC_SELF_REPORT` = 有可直接核对的本人公开文章/问答支持；本人声明不是券商成交流水第三方核验；若原文明确为经验偏好，则不可改写为强制算法。参见 [2025-02本人文章](https://tradingresourcehub.substack.com/p/martin-luk-283-usic-2024-key-lessons) 与 [2026-01本人文章](https://tradingresourcehub.substack.com/p/martin-luk-study-process)。此组与先前第三方转录ML-T001–040分开。
+
+| Rule ID | 本人公开披露 | 时期及定位 | 证据状态 | 机械化注意点 |
+| --- | --- | --- | --- | --- |
+| ML-P001 | 2024年交易主要偏好 ADR >5% 的高波动股，但明确不是强制条件 | 2025-02本人文章 Section 2 | VERIFIED_PUBLIC_SELF_REPORT | 阈值是偏好；ADR公式/观测期仍未披露 |
+| ML-P002 | 2024年大多数初始止损约1%–5%；倾向不超过标的ADR一半；其本人称2024超80%的止损低于3.5% | 2025-02本人文章 Section 1 | VERIFIED_PUBLIC_SELF_REPORT | 统计与典型经验不应混成100%硬限制 |
+| ML-P003 | 2024年单笔账户风险控制在约0.5%–1%；低于5美元的股票为减少滑点会降低持仓 | 2025-02本人文章 Section 1 | VERIFIED_PUBLIC_SELF_REPORT | 期次与后续0.5%常用值分开 |
+| ML-P004 | 每天约30分钟扫描昨日强势股potent scan与盘前gap-up pre-market scan；周末查看过去30天最大涨幅的leader scan | 2025-02本人文章 Section 2 | VERIFIED_PUBLIC_SELF_REPORT | 扫描器的价格/量能硬阈值未公开，无法声称已有完整算法 |
+| ML-P005 | 五个主要Watchlist：当日主名单、市值<$5B的小盘名单，以及按EMA排序划分的Lead/Mediocre/Lag | 2025-02本人文章 Section 2 | VERIFIED_PUBLIC_SELF_REPORT | 保留类别边界不明确与待修正分类 |
+| ML-P006 | Lead: EMA9>EMA21>EMA50；Lag: EMA9<EMA21<EMA50；Mediocre: EMA9>EMA21<EMA50 或 EMA9<EMA21>EMA50（按原文逻辑） | 2025-02本人文章 Section 2 | VERIFIED_PUBLIC_SELF_REPORT | EMA相等边界和混合形态表达需按原文处理，不能自加 |
+| ML-P007 | 同一行业多只股票新出现在扫描器，或从弱名单向强名单升级，会更关注其下次回调机会 | 2025-02本人文章 Section 2 | VERIFIED_PUBLIC_SELF_REPORT | “多只”“新出现”的数量及跨度未给阈值 |
+| ML-P008 | 事前定义止损，成交后立即提交硬止损，不依靠事后主观解释亏损 | 2025-02本人文章 Section 5 | VERIFIED_PUBLIC_SELF_REPORT | 硬止损执行也须考虑跳空与流动性 |
+| ML-P009 | 做空的高周期候选：下降的21/50EMA集群或 swing-high 锚定的下降AVWAP附近的反弹受阻 | 2026-01本人文章 Part 1 | VERIFIED_PUBLIC_SELF_REPORT | 阻力带、均线紧密程度和锚点仍主观 |
+| ML-P010 | 做空低周期两类入场：跌破上一根小时K线低点；盘中VWAP或HOD AVWAP重新测试失败 | 2026-01本人文章 Part 1 | VERIFIED_PUBLIC_SELF_REPORT | “失败”细则/成交触发方式仍部分主观 |
+| ML-P011 | 做空止损一般在当日高点或跌破K线高点；典型约1.5%–5%；单笔风险0.5%、持仓不超过35% | 2026-01本人文章 Part 2 Q&A | VERIFIED_PUBLIC_SELF_REPORT | 本人明确非硬规则；35%是当时自述上限 |
+| ML-P012 | 做空快速波段：>3R时约减15%，到前波段低点/EMA/AVWAP等支撑约减15%；小时收盘高于50EMA或主观过伸时可能退出 | 2026-01本人文章 Part 2 Q&A | VERIFIED_PUBLIC_SELF_REPORT | 分批的分母未明，EMA退出并非强制始终执行 |
+| ML-P013 | 做空研究重视高时间周期阻力+低时间周期反转确认；本人也声明不是每次反弹触碰下降EMA都具有优势 | 2026-01本人文章 Part 1 & Q&A | VERIFIED_PUBLIC_SELF_REPORT | 实际筛选、确认有效性仍需进一步量化 |
+
+**不要把编辑者 Part 3 的个人分析、Qullamaggie引用的原话归属于Martin；Martin 的自述与后文Kyna归纳应分离。**
