@@ -219,3 +219,24 @@
 ## 备用入口后的登记状态
 
 第三轮三个入口均未取得正文（见 [来源审计](source_catalog.md)）。原有 ML-R001–ML-R015 不变；VERIFIED 0、PARTIAL 0、UNVERIFIED 15、CONFLICTING 0。15 项为调查问题，不能称为已提取的交易规则。未用页面标题、用户提供的描述或主持人可能的发言替代 Martin 的原始陈述；未产生新参数或规则。
+
+
+## Initial Transcript Findings — 第一批工作转录发现（2026-10-19）
+
+**取证状态说明：** 下列内容已在 ChatGPT 侧打开的第三方连续英文转录中定位到 Martin 的答复，不是来自 Codex Cloud 已访问的原视频。状态使用 `TRANSCRIPT_REVIEW` 表示“具有工作转录支持、尚未对照音频核验”；此状态不是现有的 `VERIFIED`，后续编码仍须补全执行条件。原 ML-R001–ML-R015 研究问题继续保留，不能计作已验证规则。
+
+主来源：[工作转录](https://youtubetotranscript.com/transcript?current_language_code=en&v=VKNEJA5r8zw)；对应 [原视频](https://www.youtube.com/watch?v=VKNEJA5r8zw)；[章节索引](https://share.snipd.com/episode/2ecc451e-3f05-4f2b-8ccd-83d2d741e3ad)。工作转录未提供可靠逐句时间戳，因此以下给出文本段落锚词及相关章节范围，不假装是精确视频秒数。
+
+| ID | Martin 的公开陈述（中文准确概述，待音频核对） | 转录定位关键词 | 相关章节索引 | 证据状态 | 编码缺口 |
+| --- | --- | --- | --- | --- | --- |
+| ML-T001 | 自我定位为 swing trader，以 trend following 为主；曾大量交易 Breakout/EP/Parabolic，2025 年更多使用 Pullback，但仍进行其他交易 | `I'm a swing trader` | 12:58 起 | TRANSCRIPT_REVIEW | 各 setup 机械定义尚缺 |
+| ML-T002 | 策略侧重随市场实际奖励的形态调整；不是永久固定 Pullback 比例 | `solely depends on the market` | 约 26:09 前后 | TRANSCRIPT_REVIEW | 市场反馈指标和阈值未披露 |
+| ML-T003 | 单笔账户风险通常约 0.5%，表现不佳时可能缩小，有高确信度或其他盈利缓冲时可能增大 | `portfolio risk per trade is around 0.5%` | 15:35 起 | TRANSCRIPT_REVIEW | 实际增减幅度、账户基准未精确定义 |
+| ML-T004 | 常见单股持仓约账户25%–30%；小盘/微盘股因跳空风险可能降至20%或更低，低波动品种有时超过35% | `most positions are around 25 to 30%` | 15:35 起 | TRANSCRIPT_REVIEW | 市值及波动分级标准不明确 |
+| ML-T005 | 常见止损参考位置为入场当天低点或入场K线低点 | `low of the day` | 15:35 起 | TRANSCRIPT_REVIEW | 使用哪个周期、盘前是否计入及调整条件缺失 |
+| ML-T006 | 近年来偏好十分紧的止损，多数希望低于约2.5%–3%，并非所有交易的绝对上限 | `rarely would set my stop wider than 3%` | 15:35、30:30 起 | TRANSCRIPT_REVIEW | 止损范围以何价格计算、例外条件需核对 |
+| ML-T007 | 使用9、21、50 EMA，有时150 EMA；另外参考 dollar volume 以及 Anchored VWAP，EMA 也应用于多个时间框架 | `three indicators`、`On all time frames` | 26:09、30:30 起 | TRANSCRIPT_REVIEW | 对应周期、计算约定和阈值未知 |
+| ML-T008 | 对 Pullback 的兴趣起于 Short 端的反弹至下降EMA/阻力做空思路，后把相似逻辑应用于多头 | `shorting at the resistance` | 12:58 起 | TRANSCRIPT_REVIEW | 实际触发信号与入场过滤条件未完备 |
+| ML-T009 | 会回避离理想买点过远的追价，例如谈到日内离低点超过3%时倾向避免；这属于口述偏好，不可默认所有 setup 通用 | `more than 3% from the low of day` | 约 22:20 起 | TRANSCRIPT_REVIEW | 具体资产类别及例外条件未知 |
+
+**高风险 ASR 歧义：** 转录其他段落出现账户风险“5%”“6%/7%”等明显可能缺小数点的数字；不能据此编码账户风险 5%–7%。上述第一批条目也须在音频或更可靠转录验证后升级为 `VERIFIED`。目前没有条目达到可无歧义编码的完整程度。
