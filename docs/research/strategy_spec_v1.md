@@ -79,3 +79,18 @@
 5. 最后对选中标的判断 Setup，并以多时间框架与盘中价格结构找入场。
 
 该流程为对本人描述的**研究性重组**，不代表每笔交易严格顺序执行，尚无可量化的 scan 阈值与 market regime 算法。对应证据见 rule_registry.md 的 ML-T033–040。尤其应优先检索他提到的上一年访谈及本人公布的 scanner 设置，禁止仅凭他人交易系统补齐未知参数。
+
+
+## 第五批：本人原始文章证据对扫描器的补全
+
+相比仅依赖2026-01的第三方音频转录，现在找到2025-02-01 Martin 本人署名文章，提供以下高置信历史策略定义：
+
+- `potent scan`：前一交易日强势股扫描，具体涨跌幅、量能阈值未披露。
+- `pre-market scan`：盘前跳空涨幅榜，具体最小 gap% 与成交量门槛未披露。
+- `leader scan`：周末扫描过去30天表现最强的股票，具体前N/最低涨幅未披露。
+- 五种股票名单：当日主名单、小盘股(<$5B)，以及基于9/21/50EMA相对次序的Lead/Mediocre/Lag。
+- 2024年偏好 ADR >5% 且止损多在ADR一半内，账户风险约0.5%–1%，但均需保留时间/例外说明。
+
+来源： https://tradingresourcehub.substack.com/p/martin-luk-283-usic-2024-key-lessons （Section 1 & 2）。
+
+另一份 Martin 本人2026-01-10文章提供做空高周期阻力筛选、前一小时K线低点跌破 / intraday VWAP fail触发、0.5%风险及分批退出例子：https://tradingresourcehub.substack.com/p/martin-luk-study-process 。可将部分确定性的 EMA 排列检查和账户风险算式单独实现为底层工具，但 V1 实际 scanner 与做空完整策略仍不可宣称已复刻。
