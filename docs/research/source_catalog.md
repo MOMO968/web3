@@ -155,3 +155,13 @@ A04–A07 只是检索入口，不能登记为已取得的原始发言。未找�
 - **SRC-2025-INTERVIEW**：[283% Gain in 1 Year - The Story of the 22-Year-Old Swing Trader](https://youtu.be/lS9zbnLi1Gg) — TraderLion 2025-04-06、约2h18m，现有 [Podwise 索引](https://podwise.ai/episodes/3678850) 确认人物与访谈主题；尚未完整逐句核对，不能用该访谈替代已读本人文章，也不将其全部自动VERIFIED。
 
 证据采用时态标签：`2024/2025-02 published practice`、`2025/2026-01 published practice` 与 `2025 performance / 2026-01 interview` 分开登记，避免把早期风险上限和后来访谈中常用0.5%混成冲突。直接本人撰文的明确陈述可归类 `VERIFIED_PUBLIC_SELF_REPORT`（本人公开自述已确认，但并非交易所成交独立审计）；无具体筛选门槛处仍 `PARTIAL`。
+
+
+## 第七轮：2025 年 TraderLion 访谈带时码转录（2026-10-19）
+
+- 访谈原始视频：https://youtu.be/lS9zbnLi1Gg （2025-04-06，2h18m，发布背景见前条记录）
+- [带时码全文转录工作页面](https://lilys.ai/ko/notes/887808)：能直接读取英文逐段转录，有时间戳；字幕仍可能包含 ASR 错字，已按案例与语境排查；部分句子说话人需音频确认。
+- [Podwise 章节导航](https://podwise.ai/episodes/3678850) ：用于定位，对原话核查不具独立证明力。
+- 本轮实读：约00:33–00:39 的 Breakout/Opening Range；01:07–01:15 的 AMC、SOFI、COIN/EP 交易讲解；01:22–01:24 的提前突破与精准止损；01:29–01:34 的三种扫描器演示。
+- **重要限制：**视频中扫描器的具体软件过滤界面可能只有图像显示；目前转录口述没有给出完整的 price/volume/gap 阈值。不得从转录文字推断完整 scanner 配置。
+- 当前标为 `TIMED_TRANSCRIPT_REVIEW`：已定位原访谈时间码转录的 Martin 本人陈述，但未人工逐秒复查声音/屏幕参数。可以提高对口述内容的可追溯性，但不是逐笔成交流水验证。
