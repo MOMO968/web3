@@ -93,3 +93,21 @@ A04–A07 只是检索入口，不能登记为已取得的原始发言。未找�
 - 对 Martin 规则的证据状态：`UNVERIFIED`；没有可复核的本人发言定位或本人真实成交记录。
 
 本轮结果修正了“所有入口持续被代理拒绝”的早期观测，但未改变原始发言覆盖率 0% 的结论。当前阻塞是 YouTube 原始视频/字幕无法取得及其他入口未定位到可验证本人发言，不能将整个互联网都描述为不可访问。
+
+## 第三轮：用户提供的备用转录入口
+
+检查时间：2026-10-19（Asia/Shanghai）；本轮请求后未重复搜索或反复请求同一失败地址。
+
+| 来源 ID | 用户提供的入口 | 访问结果 | 内容证据状态 |
+| --- | --- | --- | --- |
+| ALT-004 | https://youtubetotranscript.com/transcript?current_language_code=en&v=VKNEJA5r8zw | urllib URLError：Tunnel connection failed: 403 Forbidden | UNVERIFIED |
+| ALT-005 | https://podwise.ai/episodes/7650267 | 同上 | UNVERIFIED |
+| ALT-006 | https://podcasts.apple.com/us/podcast/969-return-in-1-year-the-winning-pullback-strategy/id1586336923?i=1000747508894 | 同上 | UNVERIFIED |
+
+以上均使用环境默认 HTTPS 代理，保留 TLS 校验。代理在建立隧道阶段拒绝连接，未取得页面正文，不能判断站点自身的 HTTP 状态、转录是否存在、是否收费或是否完整。用户确认备用页面可读，仅作为可继续尝试的线索，不能代替当前研究者对正文的核查。
+
+本轮读取的可核查访谈正文为 0 字，原始发言覆盖率仍为 0%；完整性未知。Martin 与主持人身份、开头剪辑预告、正文起止、ASR 错误、关键数字及否定条件均未能核对。没有可靠视频时间戳；未将 URL、标题或文本顺序当作发言证据。
+
+新增网络草稿域名为 `youtubetotranscript.com`、`podwise.ai`、`podcasts.apple.com`，保留已有自定义域名和预设。草稿保存已确认，但不代表运行时生效或环境已发布；本轮未在没有有效状态变化的情况下重复请求。
+
+后续如取得正文，应先核查是否覆盖整集以及开头是否为重复剪辑，再使用可复查的段落锚点区分 Martin 与主持人；只有能对照音视频的定位才可作为视频时间戳。关键数字、否定和条件先交叉核对，分开记录原话、准确转述与研究推断。第三方转录入口即使可读，也不自动保证文本忠实或完整。
