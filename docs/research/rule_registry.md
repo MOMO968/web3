@@ -240,3 +240,28 @@
 | ML-T009 | 会回避离理想买点过远的追价，例如谈到日内离低点超过3%时倾向避免；这属于口述偏好，不可默认所有 setup 通用 | `more than 3% from the low of day` | 约 22:20 起 | TRANSCRIPT_REVIEW | 具体资产类别及例外条件未知 |
 
 **高风险 ASR 歧义：** 转录其他段落出现账户风险“5%”“6%/7%”等明显可能缺小数点的数字；不能据此编码账户风险 5%–7%。上述第一批条目也须在音频或更可靠转录验证后升级为 `VERIFIED`。目前没有条目达到可无歧义编码的完整程度。
+
+
+## 第二批工作转录研究：Pullback 执行细节（2026-10-19）
+
+来源：[TraderLion 访谈工作转录](https://youtubetotranscript.com/transcript?current_language_code=en&v=VKNEJA5r8zw)。本次检索并阅读的转录段落包含 Pullback 方法介绍、AVWAP 演示、UPS/QS/SOFI 等失败案例及 HOOD/OKLO 等获利案例；**未逐秒核查整集音频与展示图表**。状态 `TRANSCRIPT_REVIEW` 表示已经在连续访谈工作转录中定位 Martin 的本人陈述，但仍须核对音频、图表及ASR错误；下列 ID 不替代原有 15 个调查问题。
+
+| ID | 规则/经验表述（仅准确意译，不是硬编码默认值） | 转录锚词 | 证据状态 | 机械化缺口 |
+| --- | --- | --- | --- | --- |
+| ML-T010 | Pullback Long 倾向在日线9/21 EMA、AVWAP、前期高低点等支撑附近寻找更低风险入场，不能把任何触线视为买入 | `pullbacks into the daily 9 EMA or 21 EMA` | TRANSCRIPT_REVIEW | 支撑容差、趋势及结构过滤缺失 |
+| ML-T011 | 盘初强势股可能先冲高再向下冲洗，随后在支撑处形成二次机会；并非所有开盘突破都适合买入 | `first maybe 30 to maybe the 60` | TRANSCRIPT_REVIEW | 二次结构的自动识别标准缺失 |
+| ML-T012 | AVWAP 通常锚定盘整区的 swing high 或 swing low，在长短不同方向的走势中作潜在阻力/支撑 | `swing high or the swing lows of a base` | TRANSCRIPT_REVIEW | pivot定量定义、累计成交量与锚点周期待核对 |
+| ML-T013 | AVWAP 的锚点有时会从绝对极值微调到价格反应更好的K线 | `adjust it a little bit` | TRANSCRIPT_REVIEW | 主观“反应更好”不能假装已自动化 |
+| ML-T014 | 价格突破关键 AVWAP/阻力后首次回踩支撑，被视为值得优先观察的入场机会；也可与突破结合 | `first pullback into the supports level` | TRANSCRIPT_REVIEW | first、breakout、retest定义未完整披露 |
+| ML-T015 | 策略形态要求合适的日线背景；不应仅因为回踩小时EMA便买入，尤其避免长期上涨后缺少盘整、过度延伸的标的 | `UPS`、`too extended` | TRANSCRIPT_REVIEW | 日线过度延伸与base成熟度未量化 |
+| ML-T016 | Pullback Long 的一种具体入场：快速冲洗至小时9/21 EMA 等支撑，等待短周期K线突破前一根K线高点 | `QS`、`previous bar high` | TRANSCRIPT_REVIEW | 价格触发方式、手续费滑点、盘前/盘后界限未知 |
+| ML-T017 | 以其口述举例，开盘前约15分钟更常用1分钟K线；开盘约15—60分钟更常用5分钟K线，亦提到15分钟K线 | `15 minutes to maybe the 60 minute` | TRANSCRIPT_REVIEW | ASR疑似把 `after market open` 误识别，精确时间边界待音频核验 |
+| ML-T018 | 初始止损约60%—70%情况参考当日低点；若太宽，可能改用触发K线或前一根K线低点，且本人明确称非严格规则 | `60 to 70% at the low of day` | TRANSCRIPT_REVIEW | 分支选择逻辑、当日定义及止损执行未知 |
+| ML-T019 | Pullback Short 倾向在下降EMA/阻力被测试后，以分钟级前一根K线低点跌破为可能入场信号，止损可在当日高点 | `previous five minute bar` | TRANSCRIPT_REVIEW | short eligibility、结构确认及执行条件未明 |
+| ML-T020 | 单纯小时线看空仍可能被更强周线结构抵消；需同时看多周期趋势和潜在下方支撑 | `weekly looks pretty good` | TRANSCRIPT_REVIEW | 周线结构规则缺失 |
+| ML-T021 | 缺乏趋势延续、反复多空切换时，更倾向减少交易而非持续降低止盈阈值来适应震荡 | `I should just trade less` | TRANSCRIPT_REVIEW | market breadth、chop量化阈值缺失 |
+| ML-T022 | 止盈并非统一机械规则；某些交易分批止盈，某些使用日线9 EMA跟踪；过早退出是其自身承认的薄弱环节 | `trail it with the 9 EMA` | TRANSCRIPT_REVIEW | partial比例、触发R值、trail及全仓离场优先级未定 |
+| ML-T023 | 首次收盘跌破9 EMA曾被用于个别完整离场案例，不能推断所有交易都以此退出 | `first close below the 9 EMA` | TRANSCRIPT_REVIEW | EMA周期、调仓时点与例外条件缺失 |
+| ML-T024 | AVWAP不是所有突破交易的决定因素；具体HOOD突破交易中他认为AVWAP未明显影响决定 | `didn't influence my decision a lot` | TRANSCRIPT_REVIEW | 何时必须计算/忽略 AVWAP 不清楚 |
+
+补充重要约束：访谈对多笔交易使用回顾性评价，有些是“本应等待”“事后认为不合格”，**不可直接把事后判断当成他当时执行的机械过滤器**。所有交易类规则目前仍需图表与实际日期复核。
