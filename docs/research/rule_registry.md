@@ -265,3 +265,21 @@
 | ML-T024 | AVWAP不是所有突破交易的决定因素；具体HOOD突破交易中他认为AVWAP未明显影响决定 | `didn't influence my decision a lot` | TRANSCRIPT_REVIEW | 何时必须计算/忽略 AVWAP 不清楚 |
 
 补充重要约束：访谈对多笔交易使用回顾性评价，有些是“本应等待”“事后认为不合格”，**不可直接把事后判断当成他当时执行的机械过滤器**。所有交易类规则目前仍需图表与实际日期复核。
+
+
+## 第三批工作转录研究：卖出、减仓与多空不对称（2026-10-19）
+
+来源： [TraderLion 原访谈第三方连续转录](https://youtubetotranscript.com/transcript?current_language_code=en&v=VKNEJA5r8zw)；本次对应转录中的 BBAI 出场段、FUTU/OKLO 出场段、金矿 ETF 做空段（全文搜索锚词见下）。**仅核对转录文本，尚未逐笔匹配视频K线/成交记录。** 下列仍为 `TRANSCRIPT_REVIEW`，不能作为强制策略参数。
+
+| ID | Martin 本人转录所述 | 定位锚词 | 重要限制 |
+| --- | --- | --- | --- |
+| ML-T025 | 本人明确说没有严格统一的卖出规则；常见在浮盈 3R 或 5R 时卖出一部分，但市场极强且其他持仓提供较大盈利缓冲时也可能不分批卖出 | `don't have a very strict sell rule` | R阈值不是硬性卖出条件；先前文本中的“hour”疑似ASR将R误识别 |
+| ML-T026 | 在 BBAI 一笔交易讲解中，通常股票短周期明显过度延伸时，每次卖约原有仓位的15%；主持人提问首次减仓常否为15%–20%，Martin肯定 | `every time I think this stock is extended I sell 15%` | 比例究竟指初始仓位还是剩余仓位需音频/成交复核；非全部交易统一值 |
+| ML-T027 | 新一轮从现金开始逐步增加风险暴露时，前几笔倾向较保守、盈利就多减一些；确认趋势强、其他仓位表现好后，可少减甚至只以 EMA/止损跟踪全部持仓 | `starting from cash` | 缺乏客观的趋势/权益曲线阈值 |
+| ML-T028 | 个别盈利持仓会在第一次收盘跌破日线9 EMA时全部退出；不能把它当成统一出场规则 | `first close below the 9 EMA` | 需核验图表周期、收盘价和下单时间 |
+| ML-T029 | 由于身处香港、难长期盯美股收盘，有时设在9 EMA稍下方的保护性止损，而非必须收盘跌破EMA才行动 | `a little bit lower than the 9 EMA` | 属于他描述的替代管理方式，例外很多 |
+| ML-T030 | 对做空通常比做多更早止盈，出现顺向走势后倾向头2–3天减仓；多头有时持有2–3周才首次减仓 | `for the shorts`、`first maybe two or three days` | 只是常见持有节奏，不是到期必平仓 |
+| ML-T031 | 本人强调卖出较为灵活且有时受市场主观看法影响，也承认部分盈利交易平仓过早 | `on the sell side I'm more flexible` | 忠实V1必须支持多个退出分支而非单一统一卖出策略 |
+| ML-T032 | 2025年4月极端下跌后的一笔 TQQQ 反转，是观察连续大幅跳空及价格极度低于小时EMA，在分钟级反转/盘中突破时入场，迅速在强势中全部获利退出 | `20% below the 1 hour EMA`、`sell all into the strength` | 极端事件案例，不得泛化成一般 Pullback 规则；交易日期与具体价需图表核对 |
+
+注意：ML-T025–032 为第三方转录中确实出现的 Martin 口述摘要，但可能存在ASR错词和语境断裂；本轮未能检索到用户新增两段第三方视频可靠正文，故没有从其中提炼任何规则。
