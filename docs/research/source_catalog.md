@@ -144,3 +144,14 @@ A04–A07 只是检索入口，不能登记为已取得的原始发言。未找�
 尝试直接访问 `https://www.youtube.com/watch?v=lqLm-SBflTI` 与 `https://www.youtube.com/watch?v=Y7Xb8LjXacI`，网页工具返回 cache miss；按视频 ID 访问 youtubetotranscript 对应入口也未获得正文。关键词搜索视频 ID 未获取可靠的标题/创作者或全文转录。
 
 因此 AUX-007 和 AUX-008 仍是 `SECONDARY / UNVERIFIED`；本轮没有把任何第三方解释写入 Martin 本人规则。后续如用户提供字幕，可逐条对照原访谈。
+
+
+## 第六轮：Martin 本人署名的第一手文献与上一年 TraderLion 访谈（2026-10-19）
+
+**关键升级：此前缺少的 scanner/watchlist 明确设置，已在 Martin 本人署名的2025-02-01文章中找到。** 一手本人文章经 Kyna Kosling 编辑协助，编辑确认观点属于 Martin；属于当时方法的直接披露，与2026访谈转录分开标注时期。
+
+- **SRC-2025-ESSAY**：[The 22-Year-Old Who Returned 283% in USIC 2024](https://tradingresourcehub.substack.com/p/martin-luk-283-usic-2024-key-lessons) — 发布2025-02-01；第一人称Martin本人署名观点，Kyna编辑协助；重点见章节 `1. Minimise stops`、`2. Focus on high ADR stocks`，页面可通过网页读取；提供 ADR/止损/账户风险/扫描器/观察名单明确规则。
+- **SRC-2026-STUDY**：[Martin Luk's Low-Friction Study Process](https://tradingresourcehub.substack.com/p/martin-luk-study-process) — 发布2026-01-10；Martin本人研究稿及本人问答，Kyna编辑；重点见 `PART 1: HOW MARTIN LUK DOES A DEEP DIVE`、`PART 2: Q&A FOLLOW-UP`；提供做空具体候选/触发/风险/退出方法。
+- **SRC-2025-INTERVIEW**：[283% Gain in 1 Year - The Story of the 22-Year-Old Swing Trader](https://youtu.be/lS9zbnLi1Gg) — TraderLion 2025-04-06、约2h18m，现有 [Podwise 索引](https://podwise.ai/episodes/3678850) 确认人物与访谈主题；尚未完整逐句核对，不能用该访谈替代已读本人文章，也不将其全部自动VERIFIED。
+
+证据采用时态标签：`2024/2025-02 published practice`、`2025/2026-01 published practice` 与 `2025 performance / 2026-01 interview` 分开登记，避免把早期风险上限和后来访谈中常用0.5%混成冲突。直接本人撰文的明确陈述可归类 `VERIFIED_PUBLIC_SELF_REPORT`（本人公开自述已确认，但并非交易所成交独立审计）；无具体筛选门槛处仍 `PARTIAL`。
